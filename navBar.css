@@ -1,0 +1,80 @@
+.navBar {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0 15px 0;
+}
+
+.navBar a {
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  margin-left: 15px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  color: rgb(29, 29, 29);
+}
+
+.navBar a:hover {
+  color: rgb(246, 101, 101); 
+}
+
+#hamburgerIcon {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hamburgerMenu {
+  position: absolute;
+  z-index: 1;
+  float: right;
+  gap: 50px;
+  right: 0;
+  top: 70px;
+  padding: 10px;
+  background: white;
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: opacity 200ms ease-in-out, transform 200ms ease-in-out;
+}
+
+.hamburgerMenu li {
+  margin-bottom: 10px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  text-align: right;
+  color: rgb(34, 34, 34);
+}
+
+.hamburgerMenu a {
+  text-decoration: none;
+  color: rgb(29, 29, 29);
+}
+
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 1024px) {
+  .navBar {
+    width: 90%;
+  }
+
+  .mainMenu {
+    display: none;
+  }
+
+  #hamburgerIcon {
+    display: inline;
+  }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="navBar.css" />
+    <link rel="stylesheet" href="countDown.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="faq.css" />
+    <script src="functions.js"></script>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico" />
+    <title>Alpha Efficiency test</title>
+  </head>
+  <body>
+    <div class="navBar">
+      <img src="media/logo.png" class="logo" />
+      <div>
+        <a href = "#outerCountDown" class="mainMenu">NEWS</a>
+        <a href = "#outerAbout" class="mainMenu">ABOUT</a>
+        <a href = "#faqOuter" class="mainMenu">FAQ</a>
+        <img
+          src="media/burger.png"
+          id="hamburgerIcon"
+          onclick="hamburgerVisibility()"
+        />
+      </div>
+    </div>
+
+    <div id="hamburgerMenu" class="hamburgerMenu">
+      <li><a href = "#outerCountDown">NEWS</a></li>
+      <li><a href = "#outerAbout">ABOUT</a></li>
+      <li><a href = "#faqOuter">FAQ</a></li>
+    </div>
+
+    <div class="outer" id="outerCountDown">
+      <div id="countContainer">
+        <h2>TIME UNTIL NEW RELEASE</h2>
+        <div id="countDown">
+          <div class="timeContainer">
+            <p>DAYS</p>
+            <p id="days" class="time"></p>
+          </div>
+          <div class="timeContainer">
+            <p>HOURS</p>
+            <p id="hours" class="time"></p>
+          </div>
+          <div class="timeContainer">
+            <p>MINUTES</p>
+            <p id="minutes" class="time"></p>
+          </div>
+          <div class="timeContainer">
+            <p>SECONDS</p>
+            <p id="seconds" class="time"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="outer" id="outerAbout">
+      <div class="container" id="aboutContainer">
+        <div id="quote">
+          <h1>ABOUT THE AUTHOR</h1>
+          <p>
+            "Creating a life that reflects your values and satisfies your soul
+            is a rare achievement. In a culture that relentlessly promotes
+            avarice and excess as the good life, a person happy doing his own
+            work is usually considered an eccentric, if not a subversive. To
+            invent your own life's meaning is not easy, but it's still allowed,
+            and I think you'll be happier for the trouble."
+          </p>
+        </div>
+        <div id="portrait">
+          <img src="media/watterson1.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <div class="outer" id="faqOuter">
+      <div class="container" id="faqContainer">
+        <h1>FAQ</h1>
+        <input type="checkbox" id="sec1" />
+        <label for="sec1">WHY IS BILL WATTERSON SO FAMOUS?</label>
+        <div class="content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem sunt incidunt doloribus eius a quasi minima atque!
+            Totam expedita aspernatur neque architecto reprehenderit quasi,
+            reiciendis officiis earum laborum, vel error.
+          </p>
+        </div>
+
+        <input type="checkbox" id="sec2" />
+        <label for="sec2">DID HE CREATE OTHER COMICS APART FROM CALVIN & HOBBES?</label>
+        <div class="content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti expedita id excepturi at eaque maiores veniam. Nemo debitis sequi ut reprehenderit totam ullam similique nostrum excepturi placeat. Minus, culpa molestiae?
+          </p>
+        </div>
+
+        <input type="checkbox" id="sec3" />
+        <label for="sec3">WHEN IS THE NEXT ISSUE COMING UP?</label>
+        <div class="content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem consequuntur atque aliquid enim assumenda incidunt natus odit non expedita praesentium, reprehenderit voluptates, doloremque dignissimos perspiciatis. Quisquam architecto beatae odit ex!
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
